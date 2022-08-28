@@ -1,0 +1,64 @@
+.form-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &__check {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--grey-fontcolor);
+    cursor: pointer;
+  }
+}
+
+.form-policy__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 3px solid var(--main-blackcolor);
+  border-radius: 2px;
+
+  .form-policy__check:checked + .form-policy__text & {
+    background-color: var(--accent-color);
+    border: none;
+  }
+
+  .form-policy__check:focus + .form-policy__text & {
+    border-color: var(--accent-color);
+  }
+}
+
+.form-policy__icon {
+  fill: transparent;
+
+  .form-policy__check:checked + .form-policy__text & {
+    fill: var(--main-backgroundcolor);
+  }
+}
+
+.policy__link {
+  margin-left: 4px;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
