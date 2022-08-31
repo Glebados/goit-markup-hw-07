@@ -1,5 +1,6 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $mainFont, sans-serif;
+  font-style: normal;
   letter-spacing: 0.03em;
   background-color: var(--main-backgroundcolor);
   color: var(--main-blackcolor);

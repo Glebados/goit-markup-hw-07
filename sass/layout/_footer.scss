@@ -55,16 +55,18 @@
   }
 }
 
-.logo-white {
+.footer__logo--white {
   color: var(--white-fontcolor);
 }
 
-.list {
+.address {
   margin-top: 20px;
-
-  &-item:not(:first-child) {
-    margin-top: 9px;
-  }
+}
+.address__item {
+  margin-top: 9px;
+}
+.footer-contact-item {
+  margin-top: 9px;
 }
 
 .address__link.list {
